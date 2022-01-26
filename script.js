@@ -27,3 +27,7 @@ function limpar(){
     document.getElementById("localizacao").value = "";
     pesquisar();
 }
+
+$( function() {
+    $( "#datepicker" ).datepicker();
+  } );
