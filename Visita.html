@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/datepicker/1.0.10/datepicker.min.js"></script>
@@ -41,17 +41,18 @@
     
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top ">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top " style="position: absolute; height: 60px;">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
-                <i class="fa fa-home" aria-hidden="true"></i>
+                <!--<i class="fa fa-home" aria-hidden="true"></i>-->
+                <img src="Imagens/Logo2.png" style="height: 150px; margin-top: 17px;">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             </button>
             <div class="collapse navbar-collapse " id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
                     <a href="entrar.html" class="btn btn-outline-info" >Entrar</a>
-                    <a href="registo.html" class="btn btn-outline-info" style="margin-left: 15px;">Registro</a>
+                    <a href="registo.html" class="btn btn-outline-info" style="margin-left: 20px;">Registro</a>
                     <!--<li class="nav-item"><a class="nav-link" a href="entrar.html"> Entrar</a></li>
                     <li class="nav-item"><a class="nav-link" href="registo.html"> Registo</a></li>-->
                 </ul>
@@ -63,37 +64,37 @@
         <div class="header">
             <h2>Marcar Visita</h2>
             <br />
-            <form class="form">
+            <form class="form" action="index.html">
                 <div class="row mb-3">
                     <label for="InputName" class="col-md-2 col-form-label">Nome</label>
                     <div class="col-md-8">
-                        <input placeholder="Nome" class="form-control" id="InputName" aria-describedby="nameHelp">
+                        <input placeholder="Nome" class="form-control" id="InputName" aria-describedby="nameHelp" required>
                     </div>
                 </div>
                 <div class="row mb-3">
                     <label for="InputEmail1" class="col-md-2 col-form-label">Email </label>
                     <div class="col-md-8">
-                        <input placeholder="Email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <input placeholder="Email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required> 
                         <div id="emailHelp" class="form-text"></div>
                     </div>
                 </div>
                 <div class="row mb-3">
                     <label for="Password" class="col-md-2 col-form-label">Contacto Telefónico</label>
                     <div class="col-md-8">
-                        <input placeholder="Contacto" class="form-control" id="InputPassword" aria-describedby="PasswordHelp">
+                        <input placeholder="Contacto" class="form-control" id="InputPassword" aria-describedby="PasswordHelp" type="tel" required>
                         <div class="d-none text-danger col-form-label" id="PasswordError"><i class="fa fa-exclamation-circle"></i> Este campo é de preenchimento obrigatório (Min: 3 palavras).</div>
                     </div>
                 </div>
                 <div class="row mb-3">
                     <label for="Password" class="col-md-2 col-form-label">Data</label>
                     <div class="col-md-8">
-                        <input type="text" id="datepicker" class="form-control" placeholder="Data">
+                        <input type="text" id="datepicker" class="form-control" placeholder="Data" required>
                         <div class="d-none text-danger col-form-label" id="PasswordError"><i class="fa fa-exclamation-circle"></i> Este campo é de preenchimento obrigatório (Min: 3 palavras).</div>
                     </div>
                 </div>
                 <br />
                 
-                <input type="button" value="Submeter" onclick="location.href='index.html';" class="btn btn-primary"  />
+                <button type="submit" class="btn btn-primary">Submeter</button>
                 <input type="reset" class="btn btn-outline-dark"  value="Limpar" />
             </form>
         </div>
